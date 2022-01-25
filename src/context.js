@@ -1,21 +1,20 @@
 import React, { useState, useContext, useEffect } from "react";
 import axios from "axios";
 const AppContext = React.createContext();
-
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [Search, setSearch] = useState("");
-  const [Card, setCard] = useState([]);
+  const [CardData, setCardData] = useState([]);
   const [userList, setuserList] = useState([]);
-  const [Light, setLight] = useState(true)
+  const [Light, setLight] = useState(true);
 
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://restcountries.com/v2/all`)
+      .get(`https://fakestoreapi.com/products`)
       .then((response) => {
         setLoading(false);
-        setCard(response.data);
+        setCardData(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -23,38 +22,38 @@ const AppProvider = ({ children }) => {
   }, []);
 
   //Search by name
-  const searchCard = (val) => {
-    setSearch(val);
-  };
-  useEffect(() => {
-    if (Search === "") {
-      setLoading(true);
-      axios.get(`https://restcountries.com/v2/all`).then((response) => {
-        setLoading(false);
-        setCard(response.data);
-      });
-    } else {
-      setLoading(true);
-      axios
-        .get(`https://restcountries.com/v2/name/${Search}`)
-        .then((response) => {
-          setLoading(false);
-          setCard(response.data);
-        });
-    }
-  }, [Search]);
+  // const searchCardData = (val) => {
+  //   setSearch(val);
+  // };
+  // useEffect(() => {
+  //   if (Search === "") {
+  //     setLoading(true);
+  //     axios.get(`https://restcountries.com/v2/all`).then((response) => {
+  //       setLoading(false);
+  //       setCardData(response.data);
+  //     });
+  //   } else {
+  //     setLoading(true);
+  //     axios
+  //       .get(`https://restcountries.com/v2/name/${Search}`)
+  //       .then((response) => {
+  //         setLoading(false);
+  //         setCardData(response.data);
+  //       });
+  //   }
+  // }, [Search]);
   return (
     <AppContext.Provider
       value={{
         loading,
         Search,
-        Card,
+        CardData,
         setSearch,
         setuserList,
         userList,
-        searchCard,
+        // searchCardData,
         Light,
-        setLight
+        setLight,
       }}
     >
       {children}
