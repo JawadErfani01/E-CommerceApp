@@ -30,7 +30,7 @@ function Login() {
  
   return (
     <div className="w-2/6 my-16  h-2/6 m-auto  justify-center items-center shadow-slate-400 bg-slate-900 py-8 px-6 shadow-xl rounded-xl text-black">
-      <h2 className="text-center my-5 text-3xl text-white">Login</h2>
+      <h2 className="text-center my-6 text-3xl text-white">Login</h2>
       <form onSubmit={(e)=>handelSubmit(e)} className="m-4 ">
         <input
           value={UserName}
@@ -45,7 +45,7 @@ function Login() {
           onChange={(e) => setUserPassword(e.target.value)}
           type="password"
           required
-          className="px-4 my-2 py-2 rounded-full shadow-slate-700 shadow-xl  outline-none w-full "
+          className="px-4 my-3 py-2 rounded-full shadow-slate-700 shadow-xl  outline-none w-full "
           placeholder="Password..."
         />
         <button

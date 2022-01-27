@@ -46,7 +46,7 @@ function Card() {
               className="px-2 py-1 w-full hover:scale-95 text-white my-2 bg-slate-800 hover:bg-slate-700"
               onClick={() => addToCard(item)}
             >
-              Add to Card
+              Add to Cart
             </button>
           </div>
         );

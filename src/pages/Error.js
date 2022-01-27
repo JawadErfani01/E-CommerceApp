@@ -6,7 +6,7 @@ function Error() {
   return (
     <div>
       <h1 className="p-4 text-center text-xl">
-        oops thers is no Such as page 
+        oops thers is  no Such as page 
       </h1>
     </div>
   );

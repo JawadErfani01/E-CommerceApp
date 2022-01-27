@@ -84,7 +84,7 @@ const UserBy = () => {
         </Link>
       ) : (
         <h2 className="p-6 text-3xl text-center font-serif capitalize text-red-600">
-          Your Card is empty
+          Your Cart is empty
         </h2>
       )}
     </div>

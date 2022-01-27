@@ -20,7 +20,7 @@ function Navbar({ toggle, isOpane }) {
               <h1 className="text-2xl font-bold my-4">Frontend Developer</h1>
               <p className="text-md  text-justify ">
                 <span className="text-5xl text-blue-700 ">Hey!</span>I am Jawad
-                I am good at Javascript Reactjs and TailwindCss 
+                I am good at Javascript, Reactjs and TailwindCss 
           ....lorem adipisicing elit. Ipsam, accusamus rem iure
                 repellendus quisquam iusto, enim
               </p>

@@ -6,12 +6,12 @@ export default [
   },
   {
     linkAddress: "Card",
-    name: "Card",
+    name: "Cart",
     id: 3,
   },
   {
     linkAddress: "Order",
-    name: "Order",
+    name: "Orders",
     id: 2,
   },
  

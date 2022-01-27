@@ -10,7 +10,7 @@ function SearchForm() {
         search product by category
       </h2>
       <div className="text-center p-6 dark:shadow-xl  dark:shadow-slate-600 w-full md:w-2/3 px-10 shadow-xl">
-        <div className="1 w-full  mx-auto relative lg:mb-0  mb-4">
+        <div className=" w-full  mx-auto relative lg:mb-0  mb-4">
           <input
             type="text"
             onChange={(e) => setSearch(e.target.value)}
