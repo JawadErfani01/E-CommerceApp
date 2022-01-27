@@ -1,6 +1,4 @@
 import { FaBars, FaTimes } from "react-icons/fa";
-import React, { useEffect, useState } from "react";
-
 import PagesData from "../../PublicData/PagesData";
 import { Link } from "react-router-dom";
 function Navbar({ toggle, isOpane }) {
@@ -18,12 +16,12 @@ function Navbar({ toggle, isOpane }) {
               alt="jawad"
             />
             <div className="px-3 py-8 text-gray-200  m-4 mt-0 ml-10  transform absolute rounded-xl shadow-xl scale-0 group-hover:scale-100 duration-500 w-2/4 md:w-2/5 lg:w-1/4 text-center bg-gray-700">
-              <h1 className="text-2xl font-bold my-4">Jawad Erfani</h1>
-              <h1 className="text-1xl font-bold my-4">Fronend Developer</h1>
+              <h1 className="text-3xl font-bold my-4">Jawad Erfani</h1>
+              <h1 className="text-2xl font-bold my-4">Frontend Developer</h1>
               <p className="text-md  text-justify ">
                 <span className="text-5xl text-blue-700 ">Hey!</span>I am Jawad
-                I am good at Javascript Reactjs and TailwindCss it is my Website
-                amet consectetur adipisicing elit. Ipsam, accusamus rem iure
+                I am good at Javascript Reactjs and TailwindCss 
+          ....lorem adipisicing elit. Ipsam, accusamus rem iure
                 repellendus quisquam iusto, enim
               </p>
             </div>

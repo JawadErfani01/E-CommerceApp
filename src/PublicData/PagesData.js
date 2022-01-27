@@ -1,12 +1,12 @@
 export default [
   {
     linkAddress: "/",
-    name: "Home",
+    name: "Products",
     id: 1,
   },
   {
-    linkAddress: "List",
-    name: "List",
+    linkAddress: "Card",
+    name: "Card",
     id: 3,
   },
   {

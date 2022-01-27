@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
+.fotter-icon {
+    @apply px-3 transform ease-in duration-200 cursor-pointer hover:scale-150;
+  }
 @tailwind utilities;

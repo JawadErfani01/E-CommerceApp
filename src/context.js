@@ -6,7 +6,11 @@ const AppProvider = ({ children }) => {
   const [Search, setSearch] = useState("");
   const [CardData, setCardData] = useState([]);
   const [userList, setuserList] = useState([]);
+  const [order, setorder] = useState([]);
+  const[userInfo,setuserInfo]=useState([])
   const [Light, setLight] = useState(true);
+  console.log(CardData);
+
 
   useEffect(() => {
     setLoading(true);
@@ -22,26 +26,27 @@ const AppProvider = ({ children }) => {
   }, []);
 
   //Search by name
-  // const searchCardData = (val) => {
-  //   setSearch(val);
-  // };
-  // useEffect(() => {
-  //   if (Search === "") {
-  //     setLoading(true);
-  //     axios.get(`https://restcountries.com/v2/all`).then((response) => {
-  //       setLoading(false);
-  //       setCardData(response.data);
-  //     });
-  //   } else {
-  //     setLoading(true);
-  //     axios
-  //       .get(`https://restcountries.com/v2/name/${Search}`)
-  //       .then((response) => {
-  //         setLoading(false);
-  //         setCardData(response.data);
-  //       });
-  //   }
-  // }, [Search]);
+  const searchCardData = (val) => {
+    setSearch(val);
+  };
+  useEffect(() => {
+    if (Search === "") {
+      setLoading(true);
+      axios.get(`https://fakestoreapi.com/products`).then((response) => {
+        setLoading(false);
+        setCardData(response.data);
+      });
+    } else {
+      setLoading(true);
+      axios
+        .get(`https://fakestoreapi.com/products/category/${Search}`)
+        .then((response) => {
+          setLoading(false);
+          setCardData(response.data);
+        });
+    }
+  }, [Search]);
+
   return (
     <AppContext.Provider
       value={{
@@ -51,8 +56,12 @@ const AppProvider = ({ children }) => {
         setSearch,
         setuserList,
         userList,
-        // searchCardData,
+        searchCardData,
+        userInfo,
+        setuserInfo,
         Light,
+        order,
+        setorder,
         setLight,
       }}
     >
