@@ -1,5 +1,5 @@
 import { FaBars, FaTimes } from "react-icons/fa";
-import PagesData from "../../PublicData/PagesData";
+import PageName from "../../PublicLink/PageName";
 import { Link } from "react-router-dom";
 function Navbar({ toggle, isOpane }) {
   
@@ -27,7 +27,7 @@ function Navbar({ toggle, isOpane }) {
             </div>
           </div>
           <div className="flex ">
-            {PagesData.map((page) => {
+            {PageName.map((page) => {
               const { linkAddress, name, id } = page;
               return (
                 <ul key={id} className="hidden sm:flex">

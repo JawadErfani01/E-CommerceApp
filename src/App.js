@@ -4,7 +4,7 @@ import Dropdown from "./Components/Header/Dropdown";
 import Fotter from "./Components/Fotter/Fotter";
 import Home from "./pages/Home";
 import Order from "./pages/Order";
-import List from "./pages/List";
+import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import Error from "./pages/Error";
 import './styles/App.css'
@@ -22,7 +22,7 @@ function App() {
       <Dropdown toggle={toggle} isOpane={isOpane} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Card" element={<List />} />
+        <Route path="/Cart" element={<Cart />} />
         <Route path="/Order" element={<Order />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Registeration" element={<Registeration />} />

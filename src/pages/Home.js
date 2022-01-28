@@ -1,10 +1,10 @@
 import React from 'react';
-import Card from '../Components/Card';
+import Products from '../Components/Products';
 import SearchForm from '../Components/SearchForm/SearchForm'
 function Home() {
   return <div>
     <SearchForm/>
-      <Card/>
+      <Products/>
   </div>;
 }
 

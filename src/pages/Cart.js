@@ -5,10 +5,10 @@ import { useGlobalContext } from "../context";
 const UserBy = () => {
   const [add, setadd] = useState(1);
 
-  const { userList, setuserList,login } = useGlobalContext();
+  const { userList, setuserList } = useGlobalContext();
 
   console.log(userList.length);
-  const removeCard = (id) => {
+  const removeCart = (id) => {
     setuserList(userList.filter((item) => item.id !== id));
   };
 
@@ -58,7 +58,7 @@ const UserBy = () => {
                   Add
                 </button>
                 <button
-                    onClick={() => removeCard(id)}
+                    onClick={() => removeCart(id)}
                     className="  px-6 py-2 rounded-lg w-1/4 bg-red-400 hover:bg-red-500"
                   >
                 

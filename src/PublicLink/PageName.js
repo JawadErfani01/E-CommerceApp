@@ -5,7 +5,7 @@ export default [
     id: 1,
   },
   {
-    linkAddress: "Card",
+    linkAddress: "Cart",
     name: "Cart",
     id: 3,
   },

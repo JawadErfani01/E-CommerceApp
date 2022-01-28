@@ -1,5 +1,4 @@
-import React, { useState,useEffect } from "react";
-import axios from "axios";
+import React, { useState} from "react";
 import {useNavigate} from 'react-router-dom'
 function Registeration() {
   const [Name, setName] = useState("");
@@ -26,7 +25,7 @@ function Registeration() {
   };
 
   return (
-    <div className="w-2/6 my-16  h-2/6 m-auto  justify-center items-center shadow-slate-400 bg-slate-900 py-8 px-6 shadow-xl rounded-xl text-black">
+    <div className="w-5/6 sm:w-2/4 md:w-2/6 my-16  h-2/6 m-auto  justify-center items-center shadow-slate-400 bg-slate-900 py-8 px-6 shadow-xl rounded-xl text-black">
       <h2 className="text-center text-3xl my-6 text-white">Registeration</h2>
       <form onSubmit={handelSubmit} className="m-4 ">
         <input

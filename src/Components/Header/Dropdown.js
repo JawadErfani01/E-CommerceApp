@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PagesData from "../../PublicData/PagesData";
+import PageName from "../../PublicLink/PageName";
 function Dropdown({ toggle, isOpane }) {
   return (
     <div
@@ -11,7 +11,7 @@ function Dropdown({ toggle, isOpane }) {
       }
     >
       <nav className="mt-0 w-full">
-        {PagesData.map((page) => {
+        {PageName.map((page) => {
           const { linkAddress, name, id } = page;
           return (
             <ul key={id} className="flex text-center ">

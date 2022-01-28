@@ -7,8 +7,6 @@ const AppProvider = ({ children }) => {
   const [CardData, setCardData] = useState([]);
   const [userList, setuserList] = useState([]);
   const [order, setorder] = useState([]);
-  const[userInfo,setuserInfo]=useState([])
-  const [Light, setLight] = useState(true);
   console.log(CardData);
 
 
@@ -57,12 +55,8 @@ const AppProvider = ({ children }) => {
         setuserList,
         userList,
         searchCardData,
-        userInfo,
-        setuserInfo,
-        Light,
         order,
         setorder,
-        setLight,
       }}
     >
       {children}

@@ -1,11 +1,11 @@
-import React, { useState,useEffect } from "react";
+import React, { useState} from "react";
 import {Link, useNavigate} from 'react-router-dom'
 import {FcLeft} from 'react-icons/fc'
 import {useGlobalContext} from '../context'
 function Login() {
   const [UserName, setUserName] = useState("");
   const [UserPassword, setUserPassword] = useState("");
-  const {userInfo,setuserInfo,setuserList,order,setorder,userList}=useGlobalContext()
+  const {userInfo,setuserInfo,setuserList,setorder,userList}=useGlobalContext()
 
 
   const navigate=useNavigate()
@@ -29,7 +29,7 @@ function Login() {
   };
  
   return (
-    <div className="w-2/6 my-16  h-2/6 m-auto  justify-center items-center shadow-slate-400 bg-slate-900 py-8 px-6 shadow-xl rounded-xl text-black">
+    <div className="w-5/6 sm:w-2/4 md:w-2/6 my-16  h-2/6 m-auto  justify-center items-center shadow-slate-400 bg-slate-900 py-8 px-6 shadow-xl rounded-xl text-black">
       <h2 className="text-center my-6 text-3xl text-white">Login</h2>
       <form onSubmit={(e)=>handelSubmit(e)} className="m-4 ">
         <input
