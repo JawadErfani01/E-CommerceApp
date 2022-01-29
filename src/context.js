@@ -7,6 +7,7 @@ const AppProvider = ({ children }) => {
   const [CardData, setCardData] = useState([]);
   const [userList, setuserList] = useState([]);
   const [order, setorder] = useState([]);
+  const[userInfo,setuserInfo]=useState([])
   console.log(CardData);
 
 
@@ -23,7 +24,7 @@ const AppProvider = ({ children }) => {
       });
   }, []);
 
-  //Search by name
+  //Search by Catagory
   const searchCardData = (val) => {
     setSearch(val);
   };
@@ -55,8 +56,11 @@ const AppProvider = ({ children }) => {
         setuserList,
         userList,
         searchCardData,
+        userInfo,
+        setuserInfo,
         order,
         setorder,
+      
       }}
     >
       {children}
